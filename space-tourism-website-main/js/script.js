@@ -45,7 +45,7 @@ let crewData = [];
 let technologyData = [];
 
 
-fetch('starter-code/data.json')
+fetch('data.json')
   .then(response => response.json())
   .then(data => {
     window.destinationsData = data.destinations; 
