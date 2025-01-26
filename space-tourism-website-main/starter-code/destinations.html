@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../dist/style.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="destinations">
+  <header class="header">
+    <img class="header__logo" src="assets/shared/logo.svg" alt="">
+    <ul class="header__navigation tablet">
+      <li class="nav-li">
+        <a href="index.html" class="nav-link">
+          <span class="preset8"><b>00</b> HOME</b></span>
+        </a>
+      </li>
+      <li class="nav-li">
+        <a href="destinations.html" class="nav-link">
+          <span class="preset8"><b>01</b> DESTINATION</span>
+        </a>
+      </li>
+      <li class="nav-li">
+        <a href="crew.html" class="nav-link">
+          <span class="preset8"><b>02</b> CREW</span>
+        </a>
+      </li>
+      <li class="nav-li">
+        <a href="technology.html" class="nav-link">
+          <span class="preset8"><b>03</b> TECHNOLOGY</span>
+        </a>
+      </li>
+    </ul>
+    <img class="header__menu mobile menu-btn"  src="assets/shared/icon-hamburger.svg" alt="">
+  </header>
+  <nav class="mobile__nav__explore">
+    <img class="header__close mobile close-btn"  src="assets/shared/icon-close.svg" alt="">
+    <ul class="mobile__navigation">
+      <li>
+        <a href="index.html" >
+          <span class="preset8"><b>00</b> HOME</b></span>
+        </a>
+      </li>
+      <li>
+        <a href="destinations.html" >
+          <span class="preset8"><b>01</b> DESTINATION</span>
+        </a>
+      </li>
+      <li>
+        <a href="crew.html" >
+          <span class="preset8"><b>02</b> CREW</span>
+        </a>
+      </li>
+      <li>
+        <a href="technology.html" >
+          <span class="preset8"><b>03</b> TECHNOLOGY</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="destination">
+    <h6 class="DCT__title"><span class="h6number">01</span>PICK YOUR DESTINATION</h6>
+    <div class="destination__wrapper">
+      <div class="destination__wrapper2">
+        <div class="planet__img-container">
+            <img class="planet__img" id="planet-img" src="./assets/destination/image-moon.png" alt="">
+        </div>
+      </div>
+      <div class="destination__wrapper3">
+        <ul class="planet__list">
+          <li><button id="moon-btn">MOON</button></li>
+          <li><button id="mars-btn">MARS</button></li>
+          <li><button id="europa-btn">EUROPA</button></li>
+          <li><button id="titan-btn">TITAN</button></li>
+        </ul>
+        <div class="wrapper16">
+          <h2 id="planet-name">MOON</h2>
+          <p id="planet-info">See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        </div>
+        <hr>
+        <div class="distance__travel">
+          <div>
+            <span class="preset7">AVG. DISTANCE</span>
+            <h5 class="h5details" id="planet-distance">384,499 KM</h5>
+          </div>
+          <div>
+            <span class="preset7">EST. TRAVEL TIME</span>
+            <h5 class="h5details" id="planet-traveltime">3 DAYS</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/space-tourism-website-main/js/script.js"></script>
+  <script src="/space-tourism-website-main/js/destinations.js"></script>
+</body>
+</html>
