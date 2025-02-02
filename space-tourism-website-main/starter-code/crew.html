@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../dist/style.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="crews">
+  <header class="header">
+    <img class="header__logo" src="assets/shared/logo.svg" alt="">
+    <ul class="header__navigation tablet">
+      <li>
+        <a href="index.html" class="nav-link">
+          <span class="preset8"><b>00</b> HOME</span>
+        </a>
+      </li>
+      <li>
+        <a href="destinations.html" class="nav-link">
+          <span class="preset8"><b>01</b> DESTINATION</span>
+        </a>
+      </li>
+      <li>
+        <a href="crew.html" class="nav-link">
+          <span class="preset8"><b>02</b> CREW</span>
+        </a>
+      </li>
+      <li>
+        <a href="technology.html" class="nav-link">
+          <span class="preset8"><b>03</b> TECHNOLOGY</span>
+        </a>
+      </li>
+    </ul>
+    <img class="header__menu mobile menu-btn"  src="assets/shared/icon-hamburger.svg" alt="">
+  </header>
+  <nav class="mobile__nav__explore">
+    <img class="header__close mobile close-btn"  src="assets/shared/icon-close.svg" alt="">
+    <ul class="mobile__navigation">
+      <li class="nav-li">
+        <a href="index.html" class="nav-link">
+          <span class="preset8"><b>00</b> HOME</b></span>
+        </a>
+      </li>
+      <li class="nav-li">
+        <a href="destinations.html" class="nav-link">
+          <span class="preset8"><b>01</b> DESTINATION</span>
+        </a>
+      </li>
+      <li class="nav-li">
+        <a href="crew.html" class="nav-link">
+          <span class="preset8"><b>02</b> CREW</span>
+        </a>
+      </li>
+      <li class="nav-li">
+        <a href="technology.html" class="nav-link">
+          <span class="preset8"><b>03</b> TECHNOLOGY</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="crew">
+    <section>
+      <h6 class="DCT__title"><span class="h6number">02</span>MEET YOUR CREW</h6>
+    </section>
+    <section>
+      <div class="crew__wrapper">
+        <div class="crew__wrapper2">
+          <div class="crew__wrapper3">
+            <h4 class="h4title" id="crew-title">COMMANDER</h4>
+            <h3 id="crew-name">DOUGLAS HURLEY</h3>
+          </div>
+          <p id="crew-info">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+        </div>
+        <ul class="crew__list" role="tablist">
+          <li role="presentation">
+              <button class="crew__option"  id="douglas-btn"role="tab" aria-label="Option 1" aria-selected="true"></button>
+          </li>
+          <li role="presentation">
+              <button class="crew__option" id="mark-btn" role="tab" aria-label="Option 2" aria-selected="false"></button>
+          </li>
+          <li role="presentation">
+              <button class="crew__option" id="victor-btn" role="tab" aria-label="Option 3" aria-selected="false"></button>
+          </li>
+          <li role="presentation">
+            <button class="crew__option" id="anousheh-btn" role="tab" aria-label="Option 3" aria-selected="false"></button>
+          </li>
+        </ul>
+      </div>
+      <div class="crew__wrapper4">
+        <div class="image-container">
+            <img id="crew-img" src="./assets/crew/image-douglas-hurley.png" alt="">
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="/space-tourism-website-main/js/script.js"></script>
+  <script src="/space-tourism-website-main/js/crew.js"></script>
+</body>
+</html>
