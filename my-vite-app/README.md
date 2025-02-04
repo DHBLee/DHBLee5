@@ -1,8 +1,86 @@
-# React + Vite
+## Table of contents
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+## Overview
+
+
+### The challenge
+
+
+Users should be able to:
+
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+
+
+### Screenshot
+
+
+![](./public/1440px_solution.png)
+![](./public/375px_solution.png)
+
+
+
+
+
+
+### Links
+
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+
+## My process
+
+
+### Built with
+
+
+- Semantic HTML5 markup
+- CSS custom properties
+- REACT
+- TailwindCSS
+- Mobile-first workflow
+- JS
+
+
+
+
+### What I learned
+
+I learned a lot about REACT and TailwindCSS because it's my frist time using it 
+
+
+### Continued development
+
+I will continue to build web apps by using REACT and TailwindCSS
+
+
+### Useful resources
+
+
+- [Example resource 1](https://www.chatgpt.com) - Of Cos!
+
+
+
+
+## Author
+
+
+[@DHBLee](https://www.frontendmentor.io/profile/DHBLee)
