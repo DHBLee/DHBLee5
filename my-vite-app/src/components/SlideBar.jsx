@@ -13,7 +13,7 @@ const SlideBar = ({ pageviews, setPageviews, isYearly, yearlyPrice, price}) => {
         <div className='flex flex-col items-center w-full gap-4'>
             <div className=' md:w-full md:flex md:justify-between md:items-center'>
                 <p className=' text-sm font-semibold tracking-[2px] '>{pageviews} PAGEVIEWS</p>
-                <div className='hidden flex items-center gap-1.5 md:block'>
+                <div className='hidden items-center gap-1.5 md:flex'>
                     <span className='text-3xl font-bold '>${isYearly ? yearlyPrice : price}</span>
                     <span className='text-[#8C9AB2]'>/ {isYearly ? "year" : "month"}</span>
                 </div>
