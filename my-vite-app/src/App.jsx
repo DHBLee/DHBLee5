@@ -3,9 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/favicon-32x32.png'
 import './App.css'
 import './index.css'
-import SlideBar from '/components/slideBar'
-import Payment from '/components/Payment'
-import Features from '/components/Features'
+import SlideBar from './components/SlideBar'
+import Payment from './components/Payment'
+import Features from './components/Features'
 
 function App() {
 
