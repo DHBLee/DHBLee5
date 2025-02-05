@@ -1,0 +1,198 @@
+@use 'homepage' as *;
+
+.destinations {
+    position: relative; 
+    min-height: 100vh; 
+    height: auto; 
+    overflow: visible; 
+
+    &::before {
+        content: ''; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/space-tourism-website-main/starter-code/assets/destination/background-destination-mobile.jpg');
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1; 
+    }
+
+    @media(min-width: 768px) {
+        &::before {
+            background-image: url('/space-tourism-website-main/starter-code/assets/destination/background-destination-tablet.jpg');
+        }
+    }
+
+    @media(min-width: 1440px) {
+        &::before {
+            background-image: url('/space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg');
+        }
+    }
+}
+
+.destination {
+    @include display(grid, 24px, center, center);
+    padding-inline: clamp(1.5rem, -1.6029929577464785rem + 13.239436619718308vw, 10.3125rem);
+    padding-block: clamp(1.5rem, 0.971830985915493rem + 2.253521126760563vw, 3rem);
+
+    hr {
+        border: none;
+        border-bottom: 1px solid var(--clr-blue300);
+        width: 100%;
+        opacity: 25%;
+    }
+
+    &__wrapper {
+        @include display(flex,  32px);
+        flex-direction: column;
+        @media(min-width: 1440px) {
+            flex-direction: row;
+        }
+    }
+
+    &__wrapper2 {
+        padding-block: clamp(1.625rem, -0.597711267605634rem + 9.483568075117372vw, 7.9375rem);
+        padding-inline: 29.5px;
+    }
+
+    &__wrapper3 {
+        @include display(flex, 24px, center, center, center);
+        flex-direction: column;
+
+        @media(min-width: 1440px) {
+            text-align: left;
+            align-items: flex-start;
+            padding-inline: 47px;
+        }
+    } 
+
+    .wrapper16 {
+        @include display(grid, 16px);
+    }
+    .distance__travel {
+        @include display(flex, 24px, center, center);
+        flex-direction: column;
+
+        div {
+            @include display(grid, 12px);
+
+            .h5details {
+                font-size: 1.75rem;
+                color: var(--clr-white);
+            }
+        }
+
+        @media(min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-inline: 60px
+        }
+
+        @media(min-width: 1440px) {
+            justify-content: flex-start;
+            padding-inline: 0;
+            gap: 6rem;
+        }
+    }
+}
+
+@keyframes swipeRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes swipeLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.planet__img {
+    width: clamp(9.375rem, 2.112676056338029rem + 30.985915492957744vw, 30rem);
+    margin: auto;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+    &.swipe-right {
+        animation: swipeRight 0.5s ease-in-out;
+    }
+    &.swipe-left {
+        animation: swipeLeft 0.5s ease-in-out
+    }
+}
+
+.planet__list {
+    @include display(flex, 2rem, flex-start, center);
+
+    @media(min-width: 1440px) {
+        justify-content: flex-start;
+        
+    }
+
+    color: var(--clr-white);
+    height: 32px;
+    button {
+        position: relative;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        line-height: 0.192;
+        color: var(--clr-blue300);
+    }
+
+
+    button::before {
+        content: '';
+        position: absolute;
+        bottom: -1.5rem; 
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--clr-white);
+        transform: scaleX(0); 
+        opacity: 25%;
+        transition: transform 0.3s ease; 
+    }
+
+    button.active::before {
+        opacity: 1;
+    }
+    button.active::before, button:hover::before {
+        transform: scaleX(1); 
+    }
+    button.active {
+        color: var(--clr-white);
+    }
+    button:hover {
+        color: var(--clr-white);
+    }
+}
+
+
+.DCT__title {
+    color: var(--clr-white);
+    text-align: center;
+    .h6number {
+        opacity: 25%;
+        margin-right: 24px
+    }
+
+    @media(min-width: 768px) {
+        margin-left: -70px;
+        text-align: left;
+    }
+
+    @media(min-width: 1440px) {
+        margin-left: 0;
+    }
+}
