@@ -1,1 +1,74 @@
+@import 'tailwindcss';
 
+main {
+    background-image: url('../public/bg-stars.svg');
+    position: relative;
+    z-index: 2;
+}
+.duration-label {
+    font-size: 0.5rem;
+    letter-spacing: 2px;
+    color: var(--clr-grayishBlue);
+}
+
+.flip-card {
+    position: relative;
+    width: 60px;
+    height: 80px;
+    background: #333;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent overflow when folding */
+    perspective: 200px; /* Add perspective for 3D effect */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Enable 3D transformations */
+  }
+  
+  .flip-card-top,
+  .flip-card-bottom {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden; /* Hide the backface of the elements */
+  }
+  
+  .flip-card-top {
+    top: 0;
+    background-color: #333;
+    transform-origin: bottom; /* Rotate from the bottom edge */
+    z-index: 2; /* Ensure it's on top when folded */
+  }
+  
+  .flip-card-bottom {
+    bottom: 0;
+    background-color: #333;
+    transform: rotateX(180deg); /* Initially flipped */
+  }
+  
+  .flip {
+    animation: flipAnimation 0.5s ease-in-out;
+  }
+  
+  @keyframes flipAnimation {
+    0% {
+      transform: rotateX(0deg);
+    }
+    100% {
+      transform: rotateX(180deg); /* Flip the top half */
+    }
+  }
+  

@@ -6,25 +6,25 @@ import Countdown from './components/Countdown'
 
 function App() {
   return (
-    <main>
-        <div>
-            <h1>WE'RE LAUNCHING SOON</h1>
+    <main className='min-h-screen pt-30 pb-7 px-6 flex flex-col justify-between items-center text-center'>
+        <div className='grid gap-8'>
+            <h1 className='text-[#ffffff] tracking-[5px] font-bold'>WE'RE LAUNCHING SOON</h1>
             <Countdown />
         </div>
-        <ul>
+        <ul className='flex gap-6'>
             <li>
                 <a href="#">
-                    <i class="ri-facebook-box-fill"></i>
+                    <i className="ri-facebook-box-fill text-3xl text-[#8486a9]"></i>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class="ri-pinterest-fill"></i>
+                    <i className="ri-pinterest-fill text-3xl text-[#8486a9]"></i>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class="ri-instagram-line"></i>
+                    <i className="ri-instagram-line text-3xl text-[#8486a9]"></i>
                 </a>
             </li>
         </ul>
