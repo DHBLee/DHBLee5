@@ -6,6 +6,8 @@ import bigShoe1 from '../assets/big-shoe1.png';
 import bigShoe2 from '../assets/big-shoe2.png';
 import bigShoe3 from '../assets/big-shoe3.png';
 
+
+
 const Header = () => {
 
   const record = [
@@ -38,37 +40,56 @@ const Header = () => {
   return (
     <>
         <header>
-            <section className='flex items-center justify-between'>
-                <img src={headerLogo} alt="" />
+            <section className='flex items-center justify-between py-8'>
+                <img src={headerLogo} alt=""/>
                 
                 <button>
-                    <img src={hamburgerIcon} alt="" />
+                    <img src={hamburgerIcon} alt="" className='w-5' />
                 </button>
-            </section>
-            <section>
-                <div>
-                    <p>Our Summer collections</p>
-                    <h1>The New Arrival <span>Nike</span> Shoes</h1>
-                    <p>Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
+                <div className='hidden md:flex'>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
                     <button>
+                        Sign in / Explore Now
+                    </button>
+                </div>
+            </section>
+            <section className='flex flex-col md:flex-row'>
+                <div className='flex flex-col items-start'>
+                    <p className=' text-xl text-coral-red tracking-wider font-light'>Our Summer collections</p>
+                    <h1 className=' text-7xl font-bold mt-[40px]'>The New Arrival <span className='text-coral-red'>Nike</span> Shoes</h1>
+                    <p className='information mt-6 mb-14 max-w-[25ch]'>Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
+                    <button className='button-orange'>
                         Shop now 
                         <img src={rightArrow} alt="" />
                     </button>
-                    <div>
+                    <div className='mt-20 flex flex-wrap gap-12'>
                         {record.map((item, index) =>  (
-                            <div key={index}>
-                                <p>{item.number}</p>
-                                <p>{item.category}</p>
+                            <div key={index} className='grid'>
+                                <p className=' text-5xl font-[Palanquin] font-bold'>{item.number}</p>
+                                <p className='information' >{item.category}</p>
                             </div>
                         ))}
                     </div>
                 </div>
 
-                <div>
+                <div className=''>
                     <img src={images[selectedImageIndex]} alt="" />
                     <div>
                         {images.map((image, index) => (
-                            <button key={index} onClick={() => handleImageChange(index)} style={{ border: index === selectedImageIndex ? "2px solid red": "none"}}>
+                            <button key={index} onClick={() => handleImageChange(index)} style={{ border: index === selectedImageIndex ? "2px solid red": "none"}} className='p-2 bg-background'>
                                 <img src={image} alt="" />
                             </button>
                         ))}

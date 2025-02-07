@@ -16,7 +16,7 @@ import offerImage from '../assets/offer.svg'
 import customerImage1 from '../assets/customer1.jpeg'
 import customerImage2 from '../assets/customer2.svg'
 
-const Main = () => {
+const Mains = () => {
 
     const nike = [
         {
@@ -176,4 +176,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Mains
