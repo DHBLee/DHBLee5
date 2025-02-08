@@ -14,8 +14,14 @@ export default {
         "white-400": "rgba(255, 255, 255, 0.80)"
       },
       backgroundImage: {
-        'hero': "url('assets/images/collection-background.svg')",
-        'card': "url('assets/images/thumbnail-background.svg')",
+        'hero': "url('assets/collection-background.svg')",
+        'card': "url('assets/thumbnail-background.svg')",
+      },
+      padding: {
+        'p-custom': "clamp(3rem, 1.943661971830986rem + 4.507042253521126vw, 6rem)",
+      },
+      screen: {
+        '2xl': "1540px"
       }
     },
   },
