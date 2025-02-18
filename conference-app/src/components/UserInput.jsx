@@ -58,7 +58,7 @@ const UserInput = ({ handleSubmit }) => {
         fullName: fullNameRef.current.value,
         email: emailRef.current.value,
         githubUsername: githubUsernameRef.current.value,
-        avatar: file ? file : imgPerson, // Use the file if available
+        avatar: file ? file : imgPerson,
       };
 
       handleSubmit(formData);
