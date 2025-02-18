@@ -30,10 +30,10 @@ function App() {
 
       <picture className='absolute bottom-0 left-0'>
         <source
-          srcSet="/public/pattern-squiggly-line-bottom-desktop.svg"
+          srcSet="/pattern-squiggly-line-bottom-desktop.svg"
           media='(min-width: 1440px)'
         />
-        <img src="/public/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="" />
+        <img src="/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="" />
       </picture>
     </div>
   )
