@@ -23,16 +23,29 @@
 
   body {
     font-family: 'Inconsolata', sans-serif;
-    min-height: 100%;
-    height: 100vh;
-
-    background-image: url('../public/background-mobile.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% 100vh;
+    min-height: 100vh;
+    height: 100%;
     overflow-x: hidden;
   }
 
+  #root {
+    background-image: url('../public/background-mobile.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+  }
+
+  @media(min-width: 768px) {
+    #root {
+     background-image: url('../public/background-tablet.png');
+    }
+  }
+
+  @media(min-width: 1440px) {
+    #root {
+      background-image: url('../public/background-desktop.png');
+    }
+  }
   footer > * {
     max-width: 1540px;
     width: 100%;
