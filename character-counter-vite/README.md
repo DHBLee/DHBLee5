@@ -35,8 +35,8 @@ Users should be able to:
 ### Screenshot
 
 
-![](./images/1440px_solution.png)
-![](./images/375px_solution.png)
+![](./src/assets/1440px_solution.png)
+![](./src/assets/375px_solution.png)
 
 
 
@@ -52,6 +52,7 @@ Users should be able to:
 
 ## My process
 
+Started building the webapp using vite, then proceeded to building the website
 
 ### Built with
 
