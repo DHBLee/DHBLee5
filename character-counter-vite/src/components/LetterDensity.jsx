@@ -1,6 +1,7 @@
 import React from 'react'
 
 const LetterDensity = ({letter, value, total}) => {
+    console.log(total);
     const percentage = (value / total) * 100;
   
     return (
